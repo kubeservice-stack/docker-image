@@ -16,7 +16,6 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          # openjdk-20
           -
             name: openjdk-20-jdk-oraclelinux8
             image: dongjiang1989/openjdk
@@ -47,7 +46,6 @@ jobs:
             image: dongjiang1989/openjdk
             file: ./openjdk/20/jdk/slim-buster/Dockerfile
             platforms: linux/amd64,linux/arm64
-        # openjdk-18
           -
             name: openjdk-18-jdk-oraclelinux8
             image: dongjiang1989/openjdk
@@ -78,8 +76,7 @@ jobs:
             image: dongjiang1989/openjdk
             file: ./openjdk/18/jdk/slim-buster/Dockerfile
             platforms: linux/amd64,linux/arm64
-         # openjdk-8
-         -
+          -
             name: openjdk-8-jdk-oraclelinux8
             image: dongjiang1989/openjdk
             file: ./openjdk/8/jdk/oraclelinux8/Dockerfile
