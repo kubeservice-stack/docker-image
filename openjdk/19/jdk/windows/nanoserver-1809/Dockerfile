@@ -2,7 +2,7 @@ FROM mcr.microsoft.com/windows/nanoserver:1809
 
 SHELL ["cmd", "/s", "/c"]
 
-ENV JAVA_HOME C:\\openjdk-19
+ENV JAVA_HOME=C:\\openjdk-19
 # "ERROR: Access to the registry path is denied."
 USER ContainerAdministrator
 RUN echo Updating PATH: %JAVA_HOME%\bin;%PATH% \
@@ -14,7 +14,7 @@ USER ContainerUser
 # >
 # > Java Development Kit builds, from Oracle
 # >
-ENV JAVA_VERSION 19-ea+26
+ENV JAVA_VERSION=19-ea+26
 
 COPY --from=openjdk:19-ea-26-jdk-windowsservercore-1809 $JAVA_HOME $JAVA_HOME
 

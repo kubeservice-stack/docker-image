@@ -2,14 +2,14 @@ FROM alpine:3.16
 
 RUN apk add --no-cache java-cacerts
 
-ENV JAVA_HOME /opt/openjdk-19
-ENV PATH $JAVA_HOME/bin:$PATH
+ENV JAVA_HOME=/opt/openjdk-19
+ENV PATH=$JAVA_HOME/bin:$PATH
 
 # https://jdk.java.net/
 # >
 # > Java Development Kit builds, from Oracle
 # >
-ENV JAVA_VERSION 19-ea+5
+ENV JAVA_VERSION=19-ea+5
 # "For Alpine Linux, builds are produced on a reduced schedule and may not be in sync with the other platforms."
 
 RUN set -eux; \

@@ -17,7 +17,7 @@ RUN Write-Host 'Enabling TLS 1.2 (https://githubengineering.com/crypto-removal-n
 	New-ItemProperty -Path ('{0}/Server' -f $tls12RegBase) -Name 'Enabled' -PropertyType DWORD -Value 1 -Force; \
 	Write-Host 'Complete.'
 
-ENV JAVA_HOME C:\\openjdk-19
+ENV JAVA_HOME=C:\\openjdk-19
 RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); \
 	Write-Host ('Updating PATH: {0}' -f $newPath); \
 	setx /M PATH $newPath; \
@@ -27,9 +27,9 @@ RUN $newPath = ('{0}\bin;{1}' -f $env:JAVA_HOME, $env:PATH); \
 # >
 # > Java Development Kit builds, from Oracle
 # >
-ENV JAVA_VERSION 19-ea+26
-ENV JAVA_URL https://download.java.net/java/early_access/jdk19/26/GPL/openjdk-19-ea+26_windows-x64_bin.zip
-ENV JAVA_SHA256 3cf2f966ea53708ed1141e992d6878520fc981896396e1f625301a90741f0ce9
+ENV JAVA_VERSION=19-ea+26
+ENV JAVA_URL=https://download.java.net/java/early_access/jdk19/26/GPL/openjdk-19-ea+26_windows-x64_bin.zip
+ENV JAVA_SHA256=3cf2f966ea53708ed1141e992d6878520fc981896396e1f625301a90741f0ce9
 
 RUN Write-Host ('Downloading {0} ...' -f $env:JAVA_URL); \
 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; \

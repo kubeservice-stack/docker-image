@@ -17,34 +17,74 @@ jobs:
       matrix:
         include:
           -
-            name: openjdk-20-jdk-oraclelinux8
+            name: openjdk-19-jdk-alpine3.15
             image: dongjiang1989/openjdk
-            file: ./openjdk/20/jdk/oraclelinux8/Dockerfile
+            file: ./openjdk/19/jdk/alpine3.15/Dockerfile
+            platforms: linux/amd64
+          -
+            name: openjdk-19-jdk-alpine3.15
+            image: dongjiang1989/openjdk
+            file: ./openjdk/19/jdk/alpine3.15/Dockerfile
+            platforms: linux/amd64
+          -
+            name: openjdk-25-jdk-oraclelinux8
+            image: dongjiang1989/openjdk
+            file: ./openjdk/25/jdk/oraclelinux8/Dockerfile
             platforms: linux/amd64,linux/arm64
           -
-            name: openjdk-20-jdk-oraclelinux7
+            name: openjdk-25-jdk-oraclelinux9
             image: dongjiang1989/openjdk
-            file: ./openjdk/20/jdk/oraclelinux7/Dockerfile
+            file: ./openjdk/25/jdk/oraclelinux9/Dockerfile
             platforms: linux/amd64,linux/arm64
           -
-            name: openjdk-20-jdk-bullseye
+            name: openjdk-25-jdk-bullseye
             image: dongjiang1989/openjdk
-            file: ./openjdk/20/jdk/bullseye/Dockerfile
+            file: ./openjdk/25/jdk/bullseye/Dockerfile
             platforms: linux/amd64,linux/arm64
           -
-            name: openjdk-20-jdk-slim-bullseye
+            name: openjdk-25-jdk-slim-bullseye
             image: dongjiang1989/openjdk
-            file: ./openjdk/20/jdk/slim-bullseye/Dockerfile
+            file: ./openjdk/25/jdk/slim-bullseye/Dockerfile
             platforms: linux/amd64,linux/arm64
           -
-            name: openjdk-20-jdk-buster
+            name: openjdk-25-jdk-bookworm
             image: dongjiang1989/openjdk
-            file: ./openjdk/20/jdk/buster/Dockerfile
+            file: ./openjdk/25/jdk/bookworm/Dockerfile
             platforms: linux/amd64,linux/arm64
           -
-            name: openjdk-20-jdk-slim-buster
+            name: openjdk-25-jdk-bookworm-slim
             image: dongjiang1989/openjdk
-            file: ./openjdk/20/jdk/slim-buster/Dockerfile
+            file: ./openjdk/25/jdk/slim-bookworm/Dockerfile
+            platforms: linux/amd64,linux/arm64
+          -
+            name: openjdk-11-jdk-oraclelinux8
+            image: dongjiang1989/openjdk
+            file: ./openjdk/11/jdk/oraclelinux8/Dockerfile
+            platforms: linux/amd64,linux/arm64
+          -
+            name: openjdk-11-jdk-oraclelinux7
+            image: dongjiang1989/openjdk
+            file: ./openjdk/11/jdk/oraclelinux7/Dockerfile
+            platforms: linux/amd64,linux/arm64
+          -
+            name: openjdk-11-jdk-bullseye
+            image: dongjiang1989/openjdk
+            file: ./openjdk/11/jdk/bullseye/Dockerfile
+            platforms: linux/amd64,linux/arm64
+          -
+            name: openjdk-11-jdk-slim-bullseye
+            image: dongjiang1989/openjdk
+            file: ./openjdk/11/jdk/slim-bullseye/Dockerfile
+            platforms: linux/amd64,linux/arm64
+          -
+            name: openjdk-11-jdk-buster
+            image: dongjiang1989/openjdk
+            file: ./openjdk/11/jdk/buster/Dockerfile
+            platforms: linux/amd64,linux/arm64
+          -
+            name: openjdk-11-jdk-slim-buster
+            image: dongjiang1989/openjdk
+            file: ./openjdk/11/jdk/slim-buster/Dockerfile
             platforms: linux/amd64,linux/arm64
           -
             name: openjdk-18-jdk-oraclelinux8
