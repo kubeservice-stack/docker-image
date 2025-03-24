@@ -1,0 +1,223 @@
+{
+  "11": {
+    "jdk": {
+      "arches": {
+        "amd64": {
+          "url": "https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jdk_x64_linux_11.0.15_10.tar.gz"
+        },
+        "arm64v8": {
+          "url": "https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jdk_aarch64_linux_11.0.15_10.tar.gz"
+        },
+        "windows-amd64": {
+          "url": "https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11u-jdk_x64_windows_11.0.15_10.zip"
+        }
+      }
+    },
+    "jre": {
+      "arches": {
+        "amd64": {
+          "url": "https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_x64_linux_11.0.15_10.tar.gz"
+        },
+        "arm64v8": {
+          "url": "https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11U-jre_aarch64_linux_11.0.15_10.tar.gz"
+        },
+        "windows-amd64": {
+          "url": "https://github.com/AdoptOpenJDK/openjdk11-upstream-binaries/releases/download/jdk-11.0.15%2B10/OpenJDK11u-jre_x64_windows_11.0.15_10.zip"
+        }
+      }
+    },
+    "source": "adopt",
+    "variants": [
+      "oraclelinux8",
+      "oraclelinux7",
+      "bullseye",
+      "slim-bullseye",
+      "buster",
+      "slim-buster",
+      "windows/windowsservercore-ltsc2022",
+      "windows/windowsservercore-1809",
+      "windows/nanoserver-1809"
+    ],
+    "version": "11.0.15"
+  },
+  "18": {
+    "jdk": {
+      "arches": {
+        "amd64": {
+          "sha256": "4f81af7203fa4c8a12c9c53c94304aab69ea1551bc6119189c9883f4266a2b24",
+          "url": "https://download.java.net/java/GA/jdk18.0.1.1/65ae32619e2f40f3a9af3af1851d6e19/2/GPL/openjdk-18.0.1.1_linux-x64_bin.tar.gz"
+        },
+        "arm64v8": {
+          "sha256": "e667166c47e90874af3641ad4a3952d3c835627e4301fa1f0d620d9b6e366519",
+          "url": "https://download.java.net/java/GA/jdk18.0.1.1/65ae32619e2f40f3a9af3af1851d6e19/2/GPL/openjdk-18.0.1.1_linux-aarch64_bin.tar.gz"
+        },
+        "windows-amd64": {
+          "sha256": "a970b922a05a7fc2b077c89bf96c74570f65695b2ba067dc81805107517d7fed",
+          "url": "https://download.java.net/java/GA/jdk18.0.1.1/65ae32619e2f40f3a9af3af1851d6e19/2/GPL/openjdk-18.0.1.1_windows-x64_bin.zip"
+        }
+      }
+    },
+    "source": "oracle",
+    "variants": [
+      "oraclelinux8",
+      "oraclelinux7",
+      "bullseye",
+      "slim-bullseye",
+      "buster",
+      "slim-buster",
+      "windows/windowsservercore-ltsc2022",
+      "windows/windowsservercore-1809",
+      "windows/nanoserver-1809"
+    ],
+    "version": "18.0.1.1"
+  },
+  "19": {
+    "alpine": {
+      "jdk": {
+        "arches": {
+          "amd64": {
+            "sha256": "0ee67a41fe97341f131bd4f065ed6092d55c15de5f00f8ba1e57d21eefb2c787",
+            "url": "https://download.java.net/java/early_access/alpine/5/binaries/openjdk-19-ea+5_linux-x64-musl_bin.tar.gz"
+          }
+        }
+      },
+      "version": "19-ea+5"
+    },
+    "jdk": {
+      "arches": {
+        "amd64": {
+          "sha256": "130143ba9c969760aa4aecba9cd2296887facde306841d69404dd1d1235b3d90",
+          "url": "https://download.java.net/java/early_access/jdk19/26/GPL/openjdk-19-ea+26_linux-x64_bin.tar.gz"
+        },
+        "arm64v8": {
+          "sha256": "cedaf6ebfab9a1a716acf5a65e0bfe298e0c965c70100bc91cc414a9fcf0b4b7",
+          "url": "https://download.java.net/java/early_access/jdk19/26/GPL/openjdk-19-ea+26_linux-aarch64_bin.tar.gz"
+        },
+        "windows-amd64": {
+          "sha256": "3cf2f966ea53708ed1141e992d6878520fc981896396e1f625301a90741f0ce9",
+          "url": "https://download.java.net/java/early_access/jdk19/26/GPL/openjdk-19-ea+26_windows-x64_bin.zip"
+        }
+      }
+    },
+    "source": "oracle",
+    "variants": [
+      "oraclelinux8",
+      "oraclelinux7",
+      "bullseye",
+      "slim-bullseye",
+      "buster",
+      "slim-buster",
+      "alpine3.16",
+      "alpine3.15",
+      "windows/windowsservercore-ltsc2022",
+      "windows/windowsservercore-1809",
+      "windows/nanoserver-1809"
+    ],
+    "version": "19-ea+26"
+  },
+  "20": {
+    "jdk": {
+      "arches": {
+        "amd64": {
+          "sha256": "0abed92a0e13e5d0f0d02463a90b21a040db83ea57617f5c61c5547862152766",
+          "url": "https://download.java.net/java/early_access/jdk20/1/GPL/openjdk-20-ea+1_linux-x64_bin.tar.gz"
+        },
+        "arm64v8": {
+          "sha256": "898a2f8ca4e530d154e94ca685ef4f03341cd78f3514661a03c8f87bfbdd2371",
+          "url": "https://download.java.net/java/early_access/jdk20/1/GPL/openjdk-20-ea+1_linux-aarch64_bin.tar.gz"
+        },
+        "windows-amd64": {
+          "sha256": "c54b6bf79668a5093aae43c7c97cafac31a58aab431dd95cdc4c16b94658dd2b",
+          "url": "https://download.java.net/java/early_access/jdk20/1/GPL/openjdk-20-ea+1_windows-x64_bin.zip"
+        }
+      }
+    },
+    "source": "oracle",
+    "variants": [
+      "oraclelinux8",
+      "oraclelinux7",
+      "bullseye",
+      "slim-bullseye",
+      "buster",
+      "slim-buster",
+      "windows/windowsservercore-ltsc2022",
+      "windows/windowsservercore-1809",
+      "windows/nanoserver-1809"
+    ],
+    "version": "20-ea+1"
+  },
+  "8": {
+    "jdk": {
+      "arches": {
+        "amd64": {
+          "url": "https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u332-b09/OpenJDK8U-jdk_x64_linux_8u332b09.tar.gz"
+        },
+        "arm64v8": {
+          "url": "https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u332-b09/OpenJDK8U-jdk_aarch64_linux_8u332b09.tar.gz"
+        },
+        "windows-amd64": {
+          "url": "https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u332-b09/OpenJDK8U-jdk_x64_windows_8u332b09.zip"
+        }
+      }
+    },
+    "jre": {
+      "arches": {
+        "amd64": {
+          "url": "https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u332-b09/OpenJDK8U-jre_x64_linux_8u332b09.tar.gz"
+        },
+        "arm64v8": {
+          "url": "https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u332-b09/OpenJDK8U-jre_aarch64_linux_8u332b09.tar.gz"
+        },
+        "windows-amd64": {
+          "url": "https://github.com/AdoptOpenJDK/openjdk8-upstream-binaries/releases/download/jdk8u332-b09/OpenJDK8U-jre_x64_windows_8u332b09.zip"
+        }
+      }
+    },
+    "source": "adopt",
+    "variants": [
+      "oraclelinux8",
+      "oraclelinux7",
+      "bullseye",
+      "slim-bullseye",
+      "buster",
+      "slim-buster",
+      "windows/windowsservercore-ltsc2022",
+      "windows/windowsservercore-1809",
+      "windows/nanoserver-1809"
+    ],
+    "version": "8u332"
+  },
+  "25": {
+    "jdk": {
+      "arches": {
+        "amd64": {
+          "sha256": "7456a38bfdaa0d7a8a4aef20ff86803e727f250350b35aa263570c5df1dc46e5",
+          "url": "https://download.java.net/java/early_access/jdk25/15/GPL/openjdk-25-ea+15_linux-x64_bin.tar.gz"
+        },
+        "arm64v8": {
+          "sha256": "30fab25ab72d34be3cb4ec7b0d372c0642d7dc7f824e3370b05501141245ba7b",
+          "url": "https://download.java.net/java/early_access/jdk25/15/GPL/openjdk-25-ea+15_linux-aarch64_bin.tar.gz"
+        },
+        "windows-amd64": {
+          "sha256": "a095e71a2552995360224643760900b2c44fc91dad10cab9d289bed71fa936dc",
+          "url": "https://download.java.net/java/early_access/jdk25/15/GPL/openjdk-25-ea+15_windows-x64_bin.zip"
+        }
+      }
+    },
+    "variants": [
+      "oraclelinux9",
+      "oraclelinux8",
+      "bookworm",
+      "slim-bookworm",
+      "bullseye",
+      "slim-bullseye",
+      "windows/windowsservercore-ltsc2025",
+      "windows/windowsservercore-ltsc2022",
+      "windows/windowsservercore-1809",
+      "windows/nanoserver-ltsc2025",
+      "windows/nanoserver-ltsc2022",
+      "windows/nanoserver-1809"
+    ],
+    "version": "25-ea+15"
+  }
+}
